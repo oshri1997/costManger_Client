@@ -1,0 +1,152 @@
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f4f7f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 1024px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card__title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #0077b6;
+}
+
+.form-container {
+  background-color: #f0f7f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.form-container input,
+.form-container select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #333;
+}
+
+.report-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #0077b6;
+}
+
+.radio-group {
+  margin-bottom: 10px;
+}
+
+label {
+  margin-right: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+label input {
+  margin: 0 10px;
+}
+
+.generate-button {
+  background-color: #0077b6;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.cost_list_container {
+  background-color: #f0f7f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.cost_list_container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #0077b6;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+.table th {
+  background-color: #bcd4e6;
+  font-weight: bold;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f0f7f9;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.report-container {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.report-container select {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
