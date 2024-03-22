@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+// Define the Report component to choose the month and year
 const Report = ({ setGenerateData }) => {
   const [selectedMonth, setSelectedMonth] = useState("");
   const [selectedYear, setSelectedYear] = useState("");
@@ -7,24 +8,26 @@ const Report = ({ setGenerateData }) => {
   const handleChangeMonth = (e) => {
     setSelectedMonth(e.target.value);
   };
-
+  // Handle the change of the month
   const handleChangeYear = (e) => {
     setSelectedYear(e.target.value);
   };
 
   const generateReport = async () => {
+    // Generate the report
     if (selectedMonth && selectedYear) {
       const db = await window.idb.openCostsDB("costsdb", 1);
       const allData = await db.getAllCosts();
       const filteredData = allData.filter(
         (item) => item.month === +selectedMonth && item.year === +selectedYear
       );
-      setGenerateData(filteredData);
+      setGenerateData(filteredData); // Set the generated data
     }
   };
 
   return (
-    <div className="report-container">
+    <div className="report__container">
+      {/*  Add a select element for the month */}
       <select onChange={handleChangeMonth}>
         <option value="">Choose Month</option>
         <option value="1">January</option>
@@ -40,6 +43,7 @@ const Report = ({ setGenerateData }) => {
         <option value="11">November</option>
         <option value="12">December</option>
       </select>
+      {/*  Add a select element for the year */}
       <select onChange={handleChangeYear}>
         <option value="">Choose Year</option>
         <option value="2019">2019</option>

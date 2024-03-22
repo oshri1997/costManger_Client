@@ -1,4 +1,5 @@
-class idb {
+// Description: This file contains the IndexedDB class that is used to interact with the IndexedDB database.
+class Idb {
   constructor() {
     this.db = null;
   }
@@ -20,19 +21,19 @@ class idb {
       };
 
       request.onsuccess = (event) => {
-        const db = new idb();
+        const db = new Idb();
         db.db = event.target.result;
         console.log("Database initialized successfully.");
         resolve(db);
       };
-
+      // Handle the error
       request.onerror = (event) => {
         console.error("IndexedDB error:", event.target.errorCode);
         reject(new Error("IndexedDB error: " + event.target.error.message));
       };
     });
   }
-
+  // Add a new cost to the database
   async addCost(entry) {
     if (!this.db) {
       console.error("Database has not been initialized.");
@@ -58,6 +59,7 @@ class idb {
       };
     });
   }
+  // Get all costs from the database
   async getAllCosts() {
     if (!this.db) {
       console.error("Database has not been initialized.");
@@ -83,4 +85,4 @@ class idb {
 }
 
 // Expose idb to other scripts
-window.idb = idb;
+window.idb = Idb;

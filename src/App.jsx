@@ -4,6 +4,7 @@ import CostList from "./components/CostsList";
 import Form from "./components/Form";
 
 function App() {
+  // Define the App component
   return (
     <div className="wrapper">
       <div className="card">

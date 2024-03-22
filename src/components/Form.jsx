@@ -1,22 +1,24 @@
 import { useState } from "react";
 
+// Define the Form component to add a new cost
 const Form = () => {
   const [item, setItem] = useState({
     sum: "",
     category: "FOOD",
     description: "",
   });
-
+  // Handle the change of the input fields
   const handleChange = (e) => {
     const { name, value } = e.target;
     setItem({ ...item, [name]: value });
   };
-
+  // Handle the form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       if (!item.sum || !item.description) throw new Error("Please fill all the fields");
-      const db = await window.idb.openCostsDB("costsdb", 1);
+      const db = await window.idb.openCostsDB("costsdb", 1); // Open the database
+      // Create a new cost object
       const newCost = {
         sum: +item.sum,
         category: item.category,
@@ -37,7 +39,7 @@ const Form = () => {
     }
   };
   return (
-    <div className="form-container">
+    <div className="form__container">
       <form onSubmit={handleSubmit}>
         <input
           type="number"

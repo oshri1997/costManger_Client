@@ -24,7 +24,7 @@
   color: #0077b6;
 }
 
-.form-container {
+.form__container {
   background-color: #f0f7f9;
   border-radius: 8px;
   padding: 20px;
@@ -32,8 +32,8 @@
   margin-bottom: 20px;
 }
 
-.form-container input,
-.form-container select {
+.form__container input,
+.form__container select {
   width: 100%;
   padding: 10px;
   margin: 5px 0;
@@ -42,7 +42,7 @@
   color: #333;
 }
 
-.report-container {
+.report__container {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -59,7 +59,7 @@ h2 {
   color: #0077b6;
 }
 
-.radio-group {
+.radio__group {
   margin-bottom: 10px;
 }
 
@@ -73,7 +73,7 @@ label input {
   margin: 0 10px;
 }
 
-.generate-button {
+.generate__button {
   background-color: #0077b6;
   color: #fff;
   border: none;
@@ -83,7 +83,7 @@ label input {
   font-size: 18px;
 }
 
-.cost_list_container {
+.cost__list__container {
   background-color: #f0f7f9;
   border-radius: 8px;
   padding: 20px;
@@ -91,7 +91,7 @@ label input {
   margin-bottom: 20px;
 }
 
-.cost_list_container h2 {
+.cost__list__container h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;
   color: #0077b6;
@@ -123,7 +123,7 @@ label input {
   background-color: #fff;
 }
 
-.report-container {
+.report__container {
   margin: 20px;
   padding: 20px;
   border: 1px solid #ccc;
@@ -131,7 +131,7 @@ label input {
   background-color: #f9f9f9;
 }
 
-.report-container select {
+.report__container select {
   padding: 10px;
   margin-right: 10px;
   border-radius: 5px;
