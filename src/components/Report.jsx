@@ -1,3 +1,7 @@
+//Developers:
+//first_name:  Oshri  | last_name: Moalem  | id:   316125277
+//first_name: Elinor | last_name: Zalogin | id:   208324863
+
 import React, { useState } from "react";
 
 // Define the Report component to choose the month and year

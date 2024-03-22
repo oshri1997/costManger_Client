@@ -1,3 +1,7 @@
+//Developers:
+//first_name:  Oshri  | last_name: Moalem  | id:   316125277
+//first_name: Elinor | last_name: Zalogin | id:   208324863
+
 // Description: This file contains the IndexedDB class that is used to interact with the IndexedDB database.
 class Idb {
   constructor() {
